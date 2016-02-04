@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Thrifty</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="speciality">Especialidades</string>
+    <string name="schedule">Horario</string>
+    <string name="address">Dirección</string>
+    <string name="phone">Teléfono</string>
+    <string name="call">Llamar</string>
+    <string name="directions">Direcciones</string>
+
+    <!-- Lista de titulos de navegacion-->    
+    <string-array name="nav_options">
+        <item>Sucursales</item>
+        <item>Mapa</item>
+        <item>Redes Sociales</item>
+        <item>Galeria</item>
+        <item>Acerca de</item>
+    </string-array>
+    <!-- Lista de iconos de navegacion-->
+    <array name="navigation_iconos">
+        <item>@drawable/ic_action_user</item>
+        <item>@drawable/ic_action_star</item>
+        <item>@drawable/ic_action_event</item>
+        <item>@drawable/ic_action_place</item>
+        <item>@drawable/ic_action_labels</item> 
+    </array>  
+    
+    <!-- Array Redes Sociales  -->
+    <string-array name="social_media_options">
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+    </string-array>
+    
+    <!-- Array Acerca de  -->
+    <string-array name="about_us_options">
+        <item>Historia</item>
+        <item>Noticias</item>
+        <item>Contacto</item>
+        <item>Concesiones</item>
+    </string-array>
+</resources>

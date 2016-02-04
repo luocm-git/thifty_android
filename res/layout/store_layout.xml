@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:id="@+id/mapLyt"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:weightSum="100">
+        
+        <com.google.android.gms.maps.MapView 
+         android:id="@+id/storeMap" 
+         android:layout_width="0dp" 
+         android:layout_weight="90"
+         android:layout_height="match_parent" 
+         class="com.google.android.gms.maps.SupportMapFragment" /> 
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/mapLyt"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+			
+            <LinearLayout
+                android:id="@+id/text1Lyt"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:weightSum="100">
+	            <TextView
+	                android:id="@+id/textSpeciality"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/speciality"
+	                android:textAppearance="?android:attr/textAppearanceMedium" 
+	                android:layout_weight="90"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/specialitiesLyt"
+                android:layout_below="@+id/text1Lyt"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="100">
+
+	            <TextView
+	                android:id="@+id/specialitiesTxt"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/speciality"
+	                android:layout_weight="90"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_below="@+id/specialitiesLyt"
+                android:id="@+id/text2Lyt"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:weightSum="100">
+	            <TextView
+	                android:id="@+id/textSchedule"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/schedule"
+	                android:textAppearance="?android:attr/textAppearanceMedium" 
+	                android:layout_weight="90"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/scheduleLyt"
+                android:layout_below="@+id/text2Lyt"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="100">
+
+	            <TextView
+	                android:id="@+id/scheduleTxt"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/schedule"
+	                android:layout_weight="90"/>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/text3Lyt"
+                android:layout_below="@+id/scheduleLyt"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:weightSum="100">
+	            <TextView
+	                android:id="@+id/textAddress"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/address"
+	                android:textAppearance="?android:attr/textAppearanceMedium" 
+	                android:layout_weight="45"/>
+	            <TextView
+	                android:id="@+id/directionsTxt"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="45"
+	                android:gravity="end"
+	                android:textColor="@color/red"
+	                android:text="@string/directions"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/addressLyt"
+                android:layout_below="@+id/text3Lyt"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="100">
+
+	            <TextView
+	                android:id="@+id/addressTxt"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/address"
+	                android:layout_weight="90"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_below="@+id/addressLyt"
+                android:id="@+id/text4Lyt"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:weightSum="100">
+	            <TextView
+	                android:id="@+id/textPhone"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/phone"
+	                android:textAppearance="?android:attr/textAppearanceMedium" 
+	                android:layout_weight="45"/>
+
+	            <TextView
+	                android:id="@+id/textCall"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="45"
+	                android:gravity="end"
+	                android:textColor="@color/red"
+	                android:text="@string/call"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_below="@+id/text4Lyt"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="100">
+
+	            <TextView
+	                android:id="@+id/phoneTxt"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/schedule"
+	                android:layout_weight="90"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
